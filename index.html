@@ -14,254 +14,256 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: 
-            color: #213159;
-        }
+    /* Global Styles */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f6f6e9; /* Light background */
+        color: #194769; /* Primary text */
+    }
 
-        .container {
-            max-width: 1100px;
-        }
+    .container {
+        max-width: 1100px;
+    }
 
-        /* Navbar */
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .navbar-brand, .nav-link {
-            color: #213159 
-            font-weight: 600;
-        }
-        .nav-link:hover {
-            color: #f04b4c 
-        }
-        
-        /* Hero Section */
-        .hero-section {
-            background-color: #ffffff;
-            padding: 200px 0;
-        }
-        .hero-section h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            color: #f04b4c; 
-        }
-        .hero-section p {
-            font-size: 1.5rem;
-            color: #3d6098;
-        }
-        .profile-photo {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            border: 6px solid #f04b4c; 
-            box-shadow: 0px 0px 20px 5px #f04b4c(103, 58, 183, 0.4); 
-        }
+    /* Navbar */
+    .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .navbar-brand, .nav-link {
+        color: #194769 !important; /* Primary */
+        font-weight: 600;
+    }
+    .nav-link:hover {
+        color: #f2855e !important; /* Accent on hover */
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        background-color: #ffffff;
+        padding: 200px 0;
+    }
+    .hero-section h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #f2855e; /* Accent */
+    }
+    .hero-section p {
+        font-size: 1.5rem;
+        color: #194769; /* Strong text */
+    }
+    .profile-photo {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 6px solid #f2855e; /* Accent border */
+        box-shadow: 0px 0px 20px 5px rgba(242,133,94,0.4); /* Accent glow */
+    }
 
-        /* General Section Styling */
-        .portfolio-section {
-            padding: 80px 0;
-        }
-        .section-heading {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #f04b4c; 
-            margin-bottom: 50px;
-            text-align: center;
-        }
+    /* General Section Styling */
+    .portfolio-section {
+        padding: 80px 0;
+    }
+    .section-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #f2855e; /* Accent */
+        margin-bottom: 50px;
+        text-align: center;
+    }
 
-        /* About Me Section */
-        .about-text {
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
+    /* About Me Section */
+    .about-text {
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
 
-        /* Experience Section */
-        .experience-section {
-            padding: 80px 0;
-            background-color: #e7e7e7; 
-        }
-        .experience-item {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-        }
-        .experience-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-        .experience-item h4 {
-            font-weight: 600;
-            color: #213159; 
-        }
-        .experience-item p {
-            color: #3d6098; 
-        }
-        .experience-item .date {
-            color: #ffffff;
-            background-color: #f04b4c; 
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
+    /* Experience Section */
+    .experience-section {
+        padding: 80px 0;
+        background-color: #d7eef2; /* Soft section background */
+    }
+    .experience-item {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+    }
+    .experience-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .experience-item h4 {
+        font-weight: 600;
+        color: #194769; /* Primary */
+    }
+    .experience-item p {
+        color: #194769; /* Sub text */
+    }
+    .experience-item .date {
+        color: #ffffff;
+        background-color: #f2855e; /* Accent */
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
 
-        /* Skills Section */
-        .skills-section ul {
-            list-style: none;
-            padding: 5;
-            text-align: center;
-        }
-        .skills-section ul li {
-            font-size: 1.1rem;
-            margin-bottom: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .skills-section h4 {
-            font-weight: 600;
-            color: #3d6098; 
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        .skills-section .skills-list-icon {
-            color: #f04b4c; 
-            width: 25px;
-            text-align: center;
-            margin-right: 10px;
-        }
-        .skills-section h3 {
-            font-weight: 600;
-            color: #213159; 
-        }
-        
-        /* Projects Section */
-        .project-item {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-        }
-        .project-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-        .project-item h4 {
-            color: #213159; 
-            font-weight: 600;
-        }
-        .project-item p {
-            color: #3d6098; 
-        }
-        .project-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .project-link {
-            color: #f04b4c; 
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .project-link:hover {
-            text-decoration: underline;
-        }
-        .project-category-heading {
-            font-weight: 700;
-            color: #213159; 
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid #e7e7e7; 
-            padding-bottom: 10px;
-        }
-        
-        /* Project Category Buttons */
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
+    /* Skills Section */
+    .skills-section ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    .skills-section ul li {
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-section h4 {
+        font-weight: 600;
+        color: #194769;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .skills-section .skills-list-icon {
+        color: #f2855e; /* Accent */
+        width: 25px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .skills-section h3 {
+        font-weight: 600;
+        color: #194769;
+    }
+    
+    /* Projects Section */
+    .project-item {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+    }
+    .project-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .project-item h4 {
+        color: #194769; /* Primary */
+        font-weight: 600;
+    }
+    .project-item p {
+        color: #194769;
+    }
+    .project-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .project-link {
+        color: #f2855e; /* Accent */
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .project-link:hover {
+        color: #194769; /* Hover switch */
+        text-decoration: underline;
+    }
+    .project-category-heading {
+        font-weight: 700;
+        color: #194769;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #d7eef2; /* Section divider */
+        padding-bottom: 10px;
+    }
+    
+    /* Project Category Buttons */
+    .filter-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
 
-        .filter-btn {
-            background-color: 
-            color: #495057;
-            border: 1px solid #ced4da;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-            font-weight: 600;
-        }
+    .filter-btn {
+        background-color: #ffffff;
+        color: #194769;
+        border: 1px solid #d7eef2;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        font-weight: 600;
+    }
 
-        .filter-btn:hover {
-            background-color: #dee2e6;
-            border-color: #adb5bd;
-        }
+    .filter-btn:hover {
+        background-color: #f6f6e9; /* Soft hover */
+        border-color: #194769;
+    }
 
-        .filter-btn.active {
-            background-color: #f04b4c; 
-            color: #fff;
-            border-color: #f04b4c;
-        }
+    .filter-btn.active {
+        background-color: #f2855e;
+        color: #fff;
+        border-color: #f2855e;
+    }
 
-       
-        .hidden-project {
-            display: none !important;
-        }
+    .hidden-project {
+        display: none !important;
+    }
 
-        /* Certifications Section */
-        .cert-item {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-        }
-        .cert-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        .cert-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
+    /* Certifications Section */
+    .cert-item {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+    }
+    .cert-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .cert-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
 
-        /* Contact Section */
-        .contact-section {
-            background-color: #ffffff;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .social-icon {
-            color: #213159; 
-            font-size: 2rem;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-        .social-icon:hover {
-            color: #f04b4c; 
-        }
-        .contact-info p {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-    </style>
+    /* Contact Section */
+    .contact-section {
+        background-color: #ffffff;
+        padding: 80px 0;
+        text-align: center;
+    }
+    .social-icon {
+        color: #194769;
+        font-size: 2rem;
+        margin: 0 15px;
+        transition: color 0.3s;
+    }
+    .social-icon:hover {
+        color: #f2855e; /* Accent hover */
+    }
+    .contact-info p {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+</style>
+
+
 </head>
 <body>
 
@@ -288,7 +290,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="https://res.cloudinary.com/dbxk7xuzi/image/upload/v1754740356/20250215_082437_m8ydcb.jpg" alt="Iswariya's Profile Photo" class="profile-photo">
+                    <img src="https://res.cloudinary.com/dbxk7xuzi/image/upload/v1755420157/20250215_082437_1_ktw0qk.jpg" alt="Iswariya's Profile Photo" class="profile-photo">
                 </div>
                 <div class="col-md-6 text-md-start">
                     <h1 class="display-4">Hi, I'm Iswariya.</h1>
@@ -356,12 +358,12 @@
                 </div>
 
                 <div class="col-md-4">
-                    <h3><i class="fas fa-brain"></i> Domain Expertise</h3>
+                    <h3><i class="fas fa-brain"></i> TECHNIQUES</h3>
                     <ul class="list-unstyled mt-3">
                         <li><i class="fas fa-chart-line skills-list-icon"></i> Data Science & Analytics</li>
                         <li><i class="fas fa-robot skills-list-icon"></i> Artificial Intelligence</li>
                         <li><i class="fas fa-microchip skills-list-icon"></i> Machine Learning/ Deep Learning</li>
-                        <li><i class="fas fa-laptop-code skills-list-icon"></i> Web Development</li>
+                        <li><i class="fas fa-laptop-code skills-list-icon"></i> Full-Stack Development</li>
                     </ul>
                 </div>
                 
@@ -685,4 +687,3 @@
     </script>
 </body>
 </html>
-
